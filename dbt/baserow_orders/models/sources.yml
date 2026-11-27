@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: baserow
+    database: bronze
+    schema: bronze
+    tables:
+      - name: baserow_orders

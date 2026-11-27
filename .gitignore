@@ -1,0 +1,22 @@
+﻿# Secrets and credentials
+.env
+.env.*
+!.env.example
+profiles.yml
+**/profiles.yml
+
+# dbt generated files
+**/target/
+**/logs/
+**/dbt_packages/
+
+# Python generated files
+__pycache__/
+*.py[cod]
+*.log
+
+# Local editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

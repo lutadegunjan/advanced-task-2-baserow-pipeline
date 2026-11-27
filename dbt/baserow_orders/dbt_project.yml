@@ -1,0 +1,15 @@
+name: baserow_orders
+version: '1.0.0'
+config-version: 2
+
+profile: baserow_orders
+
+model-paths: ['models']
+
+models:
+  baserow_orders:
+    +materialized: table
+    +schema: silver
+    gold_baserow_orders_summary:
+      +schema: gold
+
