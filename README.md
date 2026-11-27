@@ -1,4 +1,4 @@
-﻿# Baserow Orders Data Pipeline
+# Baserow Orders Data Pipeline
 
 An end-to-end batch data pipeline that ingests order records from Baserow into ClickHouse and transforms them through a Bronze, Silver, and Gold medallion architecture using Apache Airflow and dbt.
 
@@ -160,6 +160,20 @@ dbt run --project-dir /opt/airflow/dbt/baserow_orders --profiles-dir /home/airfl
 
 ## Evidence
 
-Execution screenshots will be added to the `screenshots/` directory.
+### Airflow DAG Execution
+
+![Airflow successful DAG run](screenshots/01_airflow_success.png)
+
+### dbt Model Execution
+
+![dbt successful model execution](screenshots/02_dbt_success.png)
+
+### ClickHouse Medallion Record Counts
+
+![Bronze Silver Gold record counts](screenshots/03_medallion_counts.png)
+
+### Gold Category Sales Summary
+
+![Gold category sales summary](screenshots/04_gold_sales_summary.png)
 
 ---
